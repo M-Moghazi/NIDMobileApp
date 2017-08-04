@@ -25,6 +25,9 @@
 		D567F5E01F2F334400668295 /* selectImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D567F5D11F2F334400668295 /* selectImage.png */; };
 		D567F5E11F2F334400668295 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = D567F5D21F2F334400668295 /* title.png */; };
 		D567F5E21F2F334400668295 /* unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = D567F5D31F2F334400668295 /* unlike.png */; };
+		D57E22C51F348DBD0028004F /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E22C41F348DBD0028004F /* LibraryViewController.swift */; };
+		D57E22C71F348E460028004F /* PDFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E22C61F348E460028004F /* PDFCollectionViewCell.swift */; };
+		D57E22CA1F349E260028004F /* Mission.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D57E22C91F349E260028004F /* Mission.pdf */; };
 		D59960011EAB25C900FF2379 /* FeedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59960001EAB25C900FF2379 /* FeedsTableViewController.swift */; };
 		D59960031EAB280600FF2379 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59960021EAB280600FF2379 /* PostTableViewCell.swift */; };
 		D59960071EAB9B1600FF2379 /* makePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59960061EAB9B1600FF2379 /* makePostViewController.swift */; };
@@ -69,6 +72,9 @@
 		D567F5D11F2F334400668295 /* selectImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectImage.png; sourceTree = "<group>"; };
 		D567F5D21F2F334400668295 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		D567F5D31F2F334400668295 /* unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlike.png; sourceTree = "<group>"; };
+		D57E22C41F348DBD0028004F /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		D57E22C61F348E460028004F /* PDFCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFCollectionViewCell.swift; sourceTree = "<group>"; };
+		D57E22C91F349E260028004F /* Mission.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Mission.pdf; sourceTree = "<group>"; };
 		D582BECF1F2CABB10017CC9B /* NurInfoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NurInfoApp.entitlements; sourceTree = "<group>"; };
 		D59960001EAB25C900FF2379 /* FeedsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsTableViewController.swift; sourceTree = "<group>"; };
 		D59960021EAB280600FF2379 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -120,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D57E22C81F349E0D0028004F /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				D57E22C91F349E260028004F /* Mission.pdf */,
+			);
+			name = PDF;
+			sourceTree = "<group>";
+		};
 		D5995FF71EAA53BA00FF2379 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,10 +188,13 @@
 				D5AF6F6D1EA898880054A722 /* EditProfileTableViewController.swift */,
 				D5AF6F5F1EA867370054A722 /* SettingTableViewController.swift */,
 				D5AF6F551EA5F8F70054A722 /* SignInViewController.swift */,
+				D57E22C41F348DBD0028004F /* LibraryViewController.swift */,
+				D57E22C61F348E460028004F /* PDFCollectionViewCell.swift */,
 				D5D4F2DC1EA28C76003F7BD0 /* Main.storyboard */,
 				D5D4F2E11EA28C76003F7BD0 /* LaunchScreen.storyboard */,
 				D5D4F2E41EA28C76003F7BD0 /* Info.plist */,
 				D5D4F2DF1EA28C76003F7BD0 /* Assets.xcassets */,
+				D57E22C81F349E0D0028004F /* PDF */,
 				D5995FF71EAA53BA00FF2379 /* images */,
 			);
 			path = NurInfoApp;
@@ -273,6 +290,7 @@
 				D567F5DD1F2F334400668295 /* photo.png in Resources */,
 				D5D4F2E31EA28C76003F7BD0 /* LaunchScreen.storyboard in Resources */,
 				D567F5D71F2F334400668295 /* info.png in Resources */,
+				D57E22CA1F349E260028004F /* Mission.pdf in Resources */,
 				D567F5E01F2F334400668295 /* selectImage.png in Resources */,
 				D5D4F2E01EA28C76003F7BD0 /* Assets.xcassets in Resources */,
 				D567F5DE1F2F334400668295 /* profilepic.jpg in Resources */,
@@ -297,11 +315,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5AF6F601EA867370054A722 /* SettingTableViewController.swift in Sources */,
+				D57E22C51F348DBD0028004F /* LibraryViewController.swift in Sources */,
 				D59960011EAB25C900FF2379 /* FeedsTableViewController.swift in Sources */,
 				D5AF6F6E1EA898880054A722 /* EditProfileTableViewController.swift in Sources */,
 				D5AF6F561EA5F8F70054A722 /* SignInViewController.swift in Sources */,
 				D522820B1EAE7F2A009EC260 /* CommentsViewController.swift in Sources */,
 				D522820D1EAE7F65009EC260 /* CommentCell.swift in Sources */,
+				D57E22C71F348E460028004F /* PDFCollectionViewCell.swift in Sources */,
 				D5D4F2D91EA28C76003F7BD0 /* AppDelegate.swift in Sources */,
 				D5296EAE1F2E41D9003C2F3A /* PostDetailViewController.swift in Sources */,
 				D59960031EAB280600FF2379 /* PostTableViewCell.swift in Sources */,

@@ -18,7 +18,7 @@ class FeedsTableViewController: UITableViewController {
     var postDateArray = [NSDate]()
     var postIdArray = [PFObject]()
     var PFUserArray = [PFUser]()
-    
+
     var pageLimit = 5
 
     override func viewDidLoad() {
@@ -27,7 +27,6 @@ class FeedsTableViewController: UITableViewController {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.registerForPushNotifications()
-        
         
         NotificationCenter.default.addObserver(self, selector: #selector(FeedsTableViewController.refresher), name: NSNotification.Name(rawValue: "like"), object: nil)
         
@@ -40,6 +39,7 @@ class FeedsTableViewController: UITableViewController {
         refreshControl?.tintColor = UIColor(colorLiteralRed: 0/255, green: 121/255, blue: 193/255, alpha: 1)
         refreshControl?.addTarget(self, action: #selector(FeedsTableViewController.refresh), for: UIControlEvents.valueChanged)
     }
+
 
     func refresh () {
         loadPosts()
@@ -66,7 +66,6 @@ class FeedsTableViewController: UITableViewController {
                 self.titleArray.removeAll(keepingCapacity: false)
                 self.bodyArray.removeAll(keepingCapacity: false)
                 self.postDateArray.removeAll(keepingCapacity: false)
-                
                 self.PFUserArray.removeAll(keepingCapacity: false)
                 
                 for post in posts! {
@@ -79,6 +78,7 @@ class FeedsTableViewController: UITableViewController {
                     
                     let authorObj = post.object(forKey: "author") as! PFUser
                     self.PFUserArray.append(authorObj)
+
                 }
                 self.refreshControl?.endRefreshing()
                 self.tableView.reloadData()
@@ -86,7 +86,6 @@ class FeedsTableViewController: UITableViewController {
                 self.refreshControl?.endRefreshing()
                 print(error!.localizedDescription)
             }
-            
         }
     }
     
@@ -120,7 +119,7 @@ class FeedsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PostTableViewCell
-
+        
         cell.uuid.text = uuidArray[indexPath.row]
         cell.postTitleLbl.text = titleArray[indexPath.row]
         cell.postBody.text = bodyArray[indexPath.row]
@@ -174,7 +173,7 @@ class FeedsTableViewController: UITableViewController {
         }
         
         let commentCount = PFQuery(className: "Comments")
-        commentCount.whereKey("to", equalTo: cell.uuid.text!)
+        commentCount.whereKey("post", equalTo: postIdArray[indexPath.row])
         commentCount.countObjectsInBackground { (count: Int32, error: Error?) in
             if error == nil {
                 if count > 0 {
@@ -230,7 +229,7 @@ class FeedsTableViewController: UITableViewController {
             
             //delete posts' comments from server
             let commentsQuery = PFQuery(className: "Comments")
-            commentsQuery.whereKey("to", equalTo: self.uuidArray[indexPath.row])
+            commentsQuery.whereKey("post", equalTo: self.postIdArray[indexPath.row])
             commentsQuery.findObjectsInBackground(block: { (objects: [PFObject]?, error: Error?) in
                 if error == nil {
                     for object in objects! {

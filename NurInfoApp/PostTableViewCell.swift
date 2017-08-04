@@ -32,16 +32,16 @@ class PostTableViewCell: UITableViewCell {
         likeBtnLbl.setTitleColor(.clear , for: .normal)
         
         cardView.layer.cornerRadius = 2
-        cardView.clipsToBounds = true
+        cardView.layer.masksToBounds = true
         
         authorAvatar.layer.borderColor = UIColor.init(colorLiteralRed: 239/255, green: 239/255, blue: 244/255, alpha: 1.0).cgColor
         authorAvatar.layer.borderWidth = 1
-        authorAvatar.layer.cornerRadius = authorAvatar.frame.width/2
-        authorAvatar.clipsToBounds = true
+        authorAvatar.layer.cornerRadius = 5
+        authorAvatar.layer.masksToBounds = true
         authorAvatar.contentMode = .scaleAspectFit
         
         pic.layer.cornerRadius = 2
-        pic.clipsToBounds = true
+        pic.layer.masksToBounds = true
 
     }
 

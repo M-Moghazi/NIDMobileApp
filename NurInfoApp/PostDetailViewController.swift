@@ -36,12 +36,12 @@ class PostDetailViewController: UIViewController {
         
         authorAvatar.layer.borderColor = UIColor.init(colorLiteralRed: 239/255, green: 239/255, blue: 244/255, alpha: 1.0).cgColor
         authorAvatar.layer.borderWidth = 1
-        authorAvatar.layer.cornerRadius = authorAvatar.frame.width/2
-        authorAvatar.clipsToBounds = true
+        authorAvatar.layer.cornerRadius = 5
+        authorAvatar.layer.masksToBounds = true
         authorAvatar.contentMode = .scaleAspectFit
         
         postImage.layer.cornerRadius = 2
-        postImage.clipsToBounds = true
+        postImage.layer.masksToBounds = true
         
         postTitle.text = PDTitle
         authorAvatar.image = PDAuthorPic

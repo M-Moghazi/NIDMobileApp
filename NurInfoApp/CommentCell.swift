@@ -21,7 +21,7 @@ class CommentCell: UITableViewCell {
         avatar.layer.borderColor = UIColor.init(colorLiteralRed: 239/255, green: 239/255, blue: 244/255, alpha: 1.0).cgColor
         avatar.layer.borderWidth = 1
         avatar.layer.cornerRadius = avatar.frame.width/2
-        avatar.clipsToBounds = true
+        avatar.layer.masksToBounds = true
         avatar.contentMode = .scaleAspectFit
     }
     

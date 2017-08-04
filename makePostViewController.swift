@@ -30,8 +30,8 @@ class makePostViewController: UIViewController, UITextViewDelegate, UIImagePicke
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        authorAvatar.layer.cornerRadius = authorAvatar.frame.width/2
-        authorAvatar.clipsToBounds = true
+        authorAvatar.layer.cornerRadius = 5
+        authorAvatar.layer.masksToBounds = true
         authorAvatar.layer.borderColor = UIColor.init(colorLiteralRed: 239/255, green: 239/255, blue: 244/255, alpha: 1.0).cgColor
         authorAvatar.layer.borderWidth = 1
         authorAvatar.contentMode = .scaleAspectFit
@@ -40,7 +40,7 @@ class makePostViewController: UIViewController, UITextViewDelegate, UIImagePicke
         postBody.layer.cornerRadius = 5
         
         postPic.layer.cornerRadius = 5
-        postPic.clipsToBounds = true
+        postPic.layer.masksToBounds = true
         
         makePostLbl.isEnabled = false
         

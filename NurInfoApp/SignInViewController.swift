@@ -30,10 +30,9 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         logo.layer.cornerRadius = 20
-        logo.clipsToBounds = true
+        logo.layer.masksToBounds = true
         signInLbl.layer.cornerRadius = 10
-        signInLbl.clipsToBounds = true
-        
+        signInLbl.layer.masksToBounds = true
         //show keyboard
         usernametxt.becomeFirstResponder()
         
