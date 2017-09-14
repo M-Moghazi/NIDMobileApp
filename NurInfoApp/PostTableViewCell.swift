@@ -25,6 +25,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var commentCountLbl: UILabel!
     @IBOutlet weak var editBtnLbl: UIButton!
     @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var footerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,6 +43,9 @@ class PostTableViewCell: UITableViewCell {
         
         pic.layer.cornerRadius = 2
         pic.layer.masksToBounds = true
+        
+        footerView.layer.borderColor = UIColor.init(colorLiteralRed: 239/255, green: 239/255, blue: 244/255, alpha: 1.0).cgColor
+        footerView.layer.borderWidth = 1
 
     }
 

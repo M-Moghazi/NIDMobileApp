@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.swift
 //  NurInfoApp
 //
@@ -18,11 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        
+        Parse.enableLocalDatastore()
+        
         //Parse configuration in Heroku
         let parseConfig = ParseClientConfiguration { (ParseMutableClientConfiguration) in
             ParseMutableClientConfiguration.applicationId = "NursingInformaticsMobileApp"
             ParseMutableClientConfiguration.clientKey = "NursingInformaticsMasterKey"
-            ParseMutableClientConfiguration.server = "http://nidmobileapp.herokuapp.com/parse"
+            ParseMutableClientConfiguration.server = "http://nidmobileapplication.herokuapp.com/parse"
+            ParseMutableClientConfiguration.isLocalDatastoreEnabled = true
         }
         Parse.initialize(with: parseConfig)
         

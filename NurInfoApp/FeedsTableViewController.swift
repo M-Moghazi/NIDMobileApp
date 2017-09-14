@@ -18,11 +18,17 @@ class FeedsTableViewController: UITableViewController {
     var postDateArray = [NSDate]()
     var postIdArray = [PFObject]()
     var PFUserArray = [PFUser]()
-
+    
+    let loadingView = UIView()
+    let spinner = UIActivityIndicatorView()
+    let loadingLabel = UILabel()
+    
     var pageLimit = 5
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setLoadingScreen()
+        
         loadPosts()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -78,8 +84,8 @@ class FeedsTableViewController: UITableViewController {
                     
                     let authorObj = post.object(forKey: "author") as! PFUser
                     self.PFUserArray.append(authorObj)
-
                 }
+                self.removeLoadingScreen()
                 self.refreshControl?.endRefreshing()
                 self.tableView.reloadData()
             } else {
@@ -89,7 +95,32 @@ class FeedsTableViewController: UITableViewController {
         }
     }
     
+    private func setLoadingScreen() {
+        
+        // Sets the view which contains the loading text and the spinner
+        let width: CGFloat = 50
+        let height: CGFloat = 50
+        let x = (view.frame.width / 2) - (width / 2)
+        let y = (view.frame.height / 2) - (height / 2) - (self.navigationController?.navigationBar.frame.height)!
+        loadingView.frame = CGRect(x: x, y: y, width: width, height: height)
 
+        // Sets spinner
+        self.spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        self.spinner.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        self.spinner.startAnimating()
+        
+        // Adds text and spinner to the view
+        loadingView.addSubview(self.spinner)
+        
+        self.tableView.addSubview(loadingView)
+    }
+    
+    // Remove the activity indicator from the main view
+    private func removeLoadingScreen() {
+        
+        // Hides and stops the text and the spinner
+        self.spinner.stopAnimating()
+    }
 
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         // UITableView only moves in one direction, y axis

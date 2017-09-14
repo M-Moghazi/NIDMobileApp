@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74654FE8B963A3000C9B3F60 /* Pods_NurInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3704F0C9DF518867C2687CC6 /* Pods_NurInfoApp.framework */; };
 		D522820B1EAE7F2A009EC260 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522820A1EAE7F2A009EC260 /* CommentsViewController.swift */; };
 		D522820D1EAE7F65009EC260 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522820C1EAE7F65009EC260 /* CommentCell.swift */; };
 		D5296EAE1F2E41D9003C2F3A /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5296EAD1F2E41D9003C2F3A /* PostDetailViewController.swift */; };
@@ -25,12 +26,71 @@
 		D567F5E01F2F334400668295 /* selectImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D567F5D11F2F334400668295 /* selectImage.png */; };
 		D567F5E11F2F334400668295 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = D567F5D21F2F334400668295 /* title.png */; };
 		D567F5E21F2F334400668295 /* unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = D567F5D31F2F334400668295 /* unlike.png */; };
+		D5751BA51F4DDFF30080C6C5 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5751BA41F4DDFF30080C6C5 /* Section.swift */; };
+		D5751BA71F4DE1120080C6C5 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5751BA61F4DE1120080C6C5 /* ExpandableHeaderView.swift */; };
 		D57E22C51F348DBD0028004F /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E22C41F348DBD0028004F /* LibraryViewController.swift */; };
 		D57E22C71F348E460028004F /* PDFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E22C61F348E460028004F /* PDFCollectionViewCell.swift */; };
-		D57E22CA1F349E260028004F /* Mission.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D57E22C91F349E260028004F /* Mission.pdf */; };
+		D582BDFD1F4E9E3C007F4993 /* Moving Forward Plan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF11F4E9E3C007F4993 /* Moving Forward Plan.pdf */; };
+		D582BDFE1F4E9E3C007F4993 /* NI Annual Project Plan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF21F4E9E3C007F4993 /* NI Annual Project Plan.pdf */; };
+		D582BDFF1F4E9E3C007F4993 /* NI Committees of the Facilities Award 2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF31F4E9E3C007F4993 /* NI Committees of the Facilities Award 2017.pdf */; };
+		D582BE001F4E9E3C007F4993 /* NI Goals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF41F4E9E3C007F4993 /* NI Goals.pdf */; };
+		D582BE011F4E9E3C007F4993 /* NI KPI.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF51F4E9E3C007F4993 /* NI KPI.pdf */; };
+		D582BE021F4E9E3C007F4993 /* NI Mission Vision.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF61F4E9E3C007F4993 /* NI Mission Vision.pdf */; };
+		D582BE031F4E9E3C007F4993 /* NI Model.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF71F4E9E3C007F4993 /* NI Model.pdf */; };
+		D582BE041F4E9E3C007F4993 /* NI Skills Fair v4 - proposal.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF81F4E9E3C007F4993 /* NI Skills Fair v4 - proposal.pdf */; };
+		D582BE051F4E9E3C007F4993 /* NI Strategic Plan 2015-2020.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDF91F4E9E3C007F4993 /* NI Strategic Plan 2015-2020.pdf */; };
+		D582BE061F4E9E3C007F4993 /* NI Values.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDFA1F4E9E3C007F4993 /* NI Values.pdf */; };
+		D582BE071F4E9E3C007F4993 /* SOP - Handling of HICT Requests.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDFB1F4E9E3C007F4993 /* SOP - Handling of HICT Requests.pdf */; };
+		D582BE081F4E9E3C007F4993 /* SOP - Leave Endorsement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BDFC1F4E9E3C007F4993 /* SOP - Leave Endorsement.pdf */; };
+		D582BE0B1F4E9E6A007F4993 /* Cerner Clairvia Training Manual Troubleshooting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE091F4E9E6A007F4993 /* Cerner Clairvia Training Manual Troubleshooting.pdf */; };
+		D582BE0C1F4E9E6A007F4993 /* Cerner Clairvia Training Manual v3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE0A1F4E9E6A007F4993 /* Cerner Clairvia Training Manual v3.pdf */; };
+		D582BE101F4E9E81007F4993 /* 724 DTV  v3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE0D1F4E9E81007F4993 /* 724 DTV  v3.pdf */; };
+		D582BE111F4E9E81007F4993 /* Contingency Plan for CIS Downtime.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE0E1F4E9E81007F4993 /* Contingency Plan for CIS Downtime.pdf */; };
+		D582BE121F4E9E81007F4993 /* NI Roles and Responsibilities During CIS Downtime.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE0F1F4E9E81007F4993 /* NI Roles and Responsibilities During CIS Downtime.pdf */; };
+		D582BE1B1F4E9E91007F4993 /* An Introduction to Cerner Millennium.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE131F4E9E91007F4993 /* An Introduction to Cerner Millennium.pdf */; };
+		D582BE1C1F4E9E91007F4993 /* Eye Care Tips for Computer Freaks.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE141F4E9E91007F4993 /* Eye Care Tips for Computer Freaks.pdf */; };
+		D582BE1D1F4E9E91007F4993 /* How to Manage Your Computer Problems.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE151F4E9E91007F4993 /* How to Manage Your Computer Problems.pdf */; };
+		D582BE1E1F4E9E91007F4993 /* Nursing Informatics (new).pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE161F4E9E91007F4993 /* Nursing Informatics (new).pdf */; };
+		D582BE1F1F4E9E91007F4993 /* Save Time with Quick Computer Shortcuts.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE171F4E9E91007F4993 /* Save Time with Quick Computer Shortcuts.pdf */; };
+		D582BE201F4E9E91007F4993 /* Tips on Healthy Computer Use.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE181F4E9E91007F4993 /* Tips on Healthy Computer Use.pdf */; };
+		D582BE211F4E9E91007F4993 /* Useful Websites for Nurses.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE191F4E9E91007F4993 /* Useful Websites for Nurses.pdf */; };
+		D582BE221F4E9E91007F4993 /* What is CIS.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE1A1F4E9E91007F4993 /* What is CIS.pdf */; };
+		D582BE251F4E9E9B007F4993 /* OP 4005 NI Skill Lab.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE231F4E9E9B007F4993 /* OP 4005 NI Skill Lab.pdf */; };
+		D582BE261F4E9E9B007F4993 /* OP 4037 CIS Training for New Nurses.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE241F4E9E9B007F4993 /* OP 4037 CIS Training for New Nurses.pdf */; };
+		D582BE311F4E9EA8007F4993 /* Clinical Information System Elibrary Transforming Education through Technology.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE271F4E9EA8007F4993 /* Clinical Information System Elibrary Transforming Education through Technology.pdf */; };
+		D582BE321F4E9EA8007F4993 /* Impact of Elearning on Nurses Professional Knowledge and Practice in HMC.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE281F4E9EA8007F4993 /* Impact of Elearning on Nurses Professional Knowledge and Practice in HMC.pdf */; };
+		D582BE331F4E9EA8007F4993 /* Improving PFE Compliance in Outpatient Units og Al Wakra Hospital.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE291F4E9EA8007F4993 /* Improving PFE Compliance in Outpatient Units og Al Wakra Hospital.pdf */; };
+		D582BE341F4E9EA8007F4993 /* Innovating the Training Experience Nursing Informatics Department and the Clinical Information Journey.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE2A1F4E9EA8007F4993 /* Innovating the Training Experience Nursing Informatics Department and the Clinical Information Journey.pdf */; };
+		D582BE351F4E9EA8007F4993 /* NI Approach Towards EHR Training for Safe Patient Documentation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE2B1F4E9EA8007F4993 /* NI Approach Towards EHR Training for Safe Patient Documentation.pdf */; };
+		D582BE361F4E9EA8007F4993 /* NI Collaboration - Improving Medication Safety in Heart Hospital Thru Infusion Management Solution.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE2C1F4E9EA8007F4993 /* NI Collaboration - Improving Medication Safety in Heart Hospital Thru Infusion Management Solution.pdf */; };
+		D582BE371F4E9EA8007F4993 /* NI Journey Towards Improvement in Patient Safety Thru Infusion Management Technology.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE2D1F4E9EA8007F4993 /* NI Journey Towards Improvement in Patient Safety Thru Infusion Management Technology.pdf */; };
+		D582BE381F4E9EA8007F4993 /* Oncology Nurses Experience with Cerner Clairvia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE2E1F4E9EA8007F4993 /* Oncology Nurses Experience with Cerner Clairvia.pdf */; };
+		D582BE391F4E9EA8007F4993 /* Oncology Nurses’ Experience with Cerner Clairvia™ A Case Study from Qatar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE2F1F4E9EA8007F4993 /* Oncology Nurses’ Experience with Cerner Clairvia™ A Case Study from Qatar.pdf */; };
+		D582BE3A1F4E9EA8007F4993 /* Re-invigorating Nurses¹ Knowledge and Skills with the Cerner Oncology Solution.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE301F4E9EA8007F4993 /* Re-invigorating Nurses¹ Knowledge and Skills with the Cerner Oncology Solution.pdf */; };
+		D582BE461F4E9EB3007F4993 /* Big Data - Jose Barbudo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE3B1F4E9EB3007F4993 /* Big Data - Jose Barbudo.pdf */; };
+		D582BE471F4E9EB3007F4993 /* Change Management - Mr. Ali Abdelgadir.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE3C1F4E9EB3007F4993 /* Change Management - Mr. Ali Abdelgadir.pdf */; };
+		D582BE481F4E9EB3007F4993 /* Communication Technology in Nursing - Rawda.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE3D1F4E9EB3007F4993 /* Communication Technology in Nursing - Rawda.pdf */; };
+		D582BE491F4E9EB3007F4993 /* Computer and Internet Security - Eyad.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE3E1F4E9EB3007F4993 /* Computer and Internet Security - Eyad.pdf */; };
+		D582BE4A1F4E9EB3007F4993 /* Computerized Physician Order Entry (CPOE) - Khadafy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE3F1F4E9EB3007F4993 /* Computerized Physician Order Entry (CPOE) - Khadafy.pdf */; };
+		D582BE4B1F4E9EB3007F4993 /* Decision Making - Mr. Ali Abdelgadir.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE401F4E9EB3007F4993 /* Decision Making - Mr. Ali Abdelgadir.pdf */; };
+		D582BE4C1F4E9EB3007F4993 /* Delivering Effective Presentation - Noha.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE411F4E9EB3007F4993 /* Delivering Effective Presentation - Noha.pdf */; };
+		D582BE4D1F4E9EB3007F4993 /* Effective Research on the Internet - Sherman.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE421F4E9EB3007F4993 /* Effective Research on the Internet - Sherman.pdf */; };
+		D582BE4E1F4E9EB3007F4993 /* Research on Human Subjects - Rocky.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE431F4E9EB3007F4993 /* Research on Human Subjects - Rocky.pdf */; };
+		D582BE4F1F4E9EB3007F4993 /* Role of IT in Patient Safety - Fethi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE441F4E9EB3007F4993 /* Role of IT in Patient Safety - Fethi.pdf */; };
+		D582BE501F4E9EB3007F4993 /* Team Building - Rafael.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE451F4E9EB3007F4993 /* Team Building - Rafael.pdf */; };
+		D582BE581F4E9EBD007F4993 /* 1 NIB Apr 2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE511F4E9EBD007F4993 /* 1 NIB Apr 2015.pdf */; };
+		D582BE591F4E9EBD007F4993 /* 2 NIB Sep 2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE521F4E9EBD007F4993 /* 2 NIB Sep 2015.pdf */; };
+		D582BE5A1F4E9EBD007F4993 /* 3 NIB Jan 2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE531F4E9EBD007F4993 /* 3 NIB Jan 2016.pdf */; };
+		D582BE5B1F4E9EBD007F4993 /* 4 NIB May 2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE541F4E9EBD007F4993 /* 4 NIB May 2016.pdf */; };
+		D582BE5C1F4E9EBD007F4993 /* 5 NIB Oct 2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE551F4E9EBD007F4993 /* 5 NIB Oct 2016.pdf */; };
+		D582BE5D1F4E9EBD007F4993 /* 6 NIB Mar 2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE561F4E9EBD007F4993 /* 6 NIB Mar 2017.pdf */; };
+		D582BE5E1F4E9EBD007F4993 /* 7 NIB Jun 2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D582BE571F4E9EBD007F4993 /* 7 NIB Jun 2017.pdf */; };
+		D59820ED1F4E8C0E002B577F /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59820EC1F4E8C0E002B577F /* LibraryTableViewCell.swift */; };
+		D59820F31F4E8F88002B577F /* pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = D59820F21F4E8F88002B577F /* pdf.png */; };
 		D59960011EAB25C900FF2379 /* FeedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59960001EAB25C900FF2379 /* FeedsTableViewController.swift */; };
 		D59960031EAB280600FF2379 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59960021EAB280600FF2379 /* PostTableViewCell.swift */; };
 		D59960071EAB9B1600FF2379 /* makePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59960061EAB9B1600FF2379 /* makePostViewController.swift */; };
+		D5AC4DCE1F54339600ED0BFD /* 8 NIB Sept 2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D5AC4DCD1F54339600ED0BFD /* 8 NIB Sept 2017.pdf */; };
 		D5AF6F561EA5F8F70054A722 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF6F551EA5F8F70054A722 /* SignInViewController.swift */; };
 		D5AF6F601EA867370054A722 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF6F5F1EA867370054A722 /* SettingTableViewController.swift */; };
 		D5AF6F6E1EA898880054A722 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF6F6D1EA898880054A722 /* EditProfileTableViewController.swift */; };
@@ -54,6 +114,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EB40209B6377EE4474F8E23 /* Pods-NurInfoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NurInfoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NurInfoApp/Pods-NurInfoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3704F0C9DF518867C2687CC6 /* Pods_NurInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NurInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D522820A1EAE7F2A009EC260 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		D522820C1EAE7F65009EC260 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		D5296EAD1F2E41D9003C2F3A /* PostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
@@ -72,13 +134,72 @@
 		D567F5D11F2F334400668295 /* selectImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectImage.png; sourceTree = "<group>"; };
 		D567F5D21F2F334400668295 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		D567F5D31F2F334400668295 /* unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlike.png; sourceTree = "<group>"; };
+		D5751BA41F4DDFF30080C6C5 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		D5751BA61F4DE1120080C6C5 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 		D57E22C41F348DBD0028004F /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		D57E22C61F348E460028004F /* PDFCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFCollectionViewCell.swift; sourceTree = "<group>"; };
-		D57E22C91F349E260028004F /* Mission.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Mission.pdf; sourceTree = "<group>"; };
+		D582BDF11F4E9E3C007F4993 /* Moving Forward Plan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Moving Forward Plan.pdf"; sourceTree = "<group>"; };
+		D582BDF21F4E9E3C007F4993 /* NI Annual Project Plan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Annual Project Plan.pdf"; sourceTree = "<group>"; };
+		D582BDF31F4E9E3C007F4993 /* NI Committees of the Facilities Award 2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Committees of the Facilities Award 2017.pdf"; sourceTree = "<group>"; };
+		D582BDF41F4E9E3C007F4993 /* NI Goals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Goals.pdf"; sourceTree = "<group>"; };
+		D582BDF51F4E9E3C007F4993 /* NI KPI.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI KPI.pdf"; sourceTree = "<group>"; };
+		D582BDF61F4E9E3C007F4993 /* NI Mission Vision.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Mission Vision.pdf"; sourceTree = "<group>"; };
+		D582BDF71F4E9E3C007F4993 /* NI Model.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Model.pdf"; sourceTree = "<group>"; };
+		D582BDF81F4E9E3C007F4993 /* NI Skills Fair v4 - proposal.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Skills Fair v4 - proposal.pdf"; sourceTree = "<group>"; };
+		D582BDF91F4E9E3C007F4993 /* NI Strategic Plan 2015-2020.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Strategic Plan 2015-2020.pdf"; sourceTree = "<group>"; };
+		D582BDFA1F4E9E3C007F4993 /* NI Values.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Values.pdf"; sourceTree = "<group>"; };
+		D582BDFB1F4E9E3C007F4993 /* SOP - Handling of HICT Requests.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SOP - Handling of HICT Requests.pdf"; sourceTree = "<group>"; };
+		D582BDFC1F4E9E3C007F4993 /* SOP - Leave Endorsement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SOP - Leave Endorsement.pdf"; sourceTree = "<group>"; };
+		D582BE091F4E9E6A007F4993 /* Cerner Clairvia Training Manual Troubleshooting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Cerner Clairvia Training Manual Troubleshooting.pdf"; sourceTree = "<group>"; };
+		D582BE0A1F4E9E6A007F4993 /* Cerner Clairvia Training Manual v3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Cerner Clairvia Training Manual v3.pdf"; sourceTree = "<group>"; };
+		D582BE0D1F4E9E81007F4993 /* 724 DTV  v3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "724 DTV  v3.pdf"; sourceTree = "<group>"; };
+		D582BE0E1F4E9E81007F4993 /* Contingency Plan for CIS Downtime.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Contingency Plan for CIS Downtime.pdf"; sourceTree = "<group>"; };
+		D582BE0F1F4E9E81007F4993 /* NI Roles and Responsibilities During CIS Downtime.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Roles and Responsibilities During CIS Downtime.pdf"; sourceTree = "<group>"; };
+		D582BE131F4E9E91007F4993 /* An Introduction to Cerner Millennium.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "An Introduction to Cerner Millennium.pdf"; sourceTree = "<group>"; };
+		D582BE141F4E9E91007F4993 /* Eye Care Tips for Computer Freaks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Eye Care Tips for Computer Freaks.pdf"; sourceTree = "<group>"; };
+		D582BE151F4E9E91007F4993 /* How to Manage Your Computer Problems.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "How to Manage Your Computer Problems.pdf"; sourceTree = "<group>"; };
+		D582BE161F4E9E91007F4993 /* Nursing Informatics (new).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Nursing Informatics (new).pdf"; sourceTree = "<group>"; };
+		D582BE171F4E9E91007F4993 /* Save Time with Quick Computer Shortcuts.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Save Time with Quick Computer Shortcuts.pdf"; sourceTree = "<group>"; };
+		D582BE181F4E9E91007F4993 /* Tips on Healthy Computer Use.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Tips on Healthy Computer Use.pdf"; sourceTree = "<group>"; };
+		D582BE191F4E9E91007F4993 /* Useful Websites for Nurses.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Useful Websites for Nurses.pdf"; sourceTree = "<group>"; };
+		D582BE1A1F4E9E91007F4993 /* What is CIS.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "What is CIS.pdf"; sourceTree = "<group>"; };
+		D582BE231F4E9E9B007F4993 /* OP 4005 NI Skill Lab.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OP 4005 NI Skill Lab.pdf"; sourceTree = "<group>"; };
+		D582BE241F4E9E9B007F4993 /* OP 4037 CIS Training for New Nurses.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OP 4037 CIS Training for New Nurses.pdf"; sourceTree = "<group>"; };
+		D582BE271F4E9EA8007F4993 /* Clinical Information System Elibrary Transforming Education through Technology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Clinical Information System Elibrary Transforming Education through Technology.pdf"; sourceTree = "<group>"; };
+		D582BE281F4E9EA8007F4993 /* Impact of Elearning on Nurses Professional Knowledge and Practice in HMC.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Impact of Elearning on Nurses Professional Knowledge and Practice in HMC.pdf"; sourceTree = "<group>"; };
+		D582BE291F4E9EA8007F4993 /* Improving PFE Compliance in Outpatient Units og Al Wakra Hospital.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Improving PFE Compliance in Outpatient Units og Al Wakra Hospital.pdf"; sourceTree = "<group>"; };
+		D582BE2A1F4E9EA8007F4993 /* Innovating the Training Experience Nursing Informatics Department and the Clinical Information Journey.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Innovating the Training Experience Nursing Informatics Department and the Clinical Information Journey.pdf"; sourceTree = "<group>"; };
+		D582BE2B1F4E9EA8007F4993 /* NI Approach Towards EHR Training for Safe Patient Documentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Approach Towards EHR Training for Safe Patient Documentation.pdf"; sourceTree = "<group>"; };
+		D582BE2C1F4E9EA8007F4993 /* NI Collaboration - Improving Medication Safety in Heart Hospital Thru Infusion Management Solution.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Collaboration - Improving Medication Safety in Heart Hospital Thru Infusion Management Solution.pdf"; sourceTree = "<group>"; };
+		D582BE2D1F4E9EA8007F4993 /* NI Journey Towards Improvement in Patient Safety Thru Infusion Management Technology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NI Journey Towards Improvement in Patient Safety Thru Infusion Management Technology.pdf"; sourceTree = "<group>"; };
+		D582BE2E1F4E9EA8007F4993 /* Oncology Nurses Experience with Cerner Clairvia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Oncology Nurses Experience with Cerner Clairvia.pdf"; sourceTree = "<group>"; };
+		D582BE2F1F4E9EA8007F4993 /* Oncology Nurses’ Experience with Cerner Clairvia™ A Case Study from Qatar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Oncology Nurses’ Experience with Cerner Clairvia™ A Case Study from Qatar.pdf"; sourceTree = "<group>"; };
+		D582BE301F4E9EA8007F4993 /* Re-invigorating Nurses¹ Knowledge and Skills with the Cerner Oncology Solution.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Re-invigorating Nurses¹ Knowledge and Skills with the Cerner Oncology Solution.pdf"; sourceTree = "<group>"; };
+		D582BE3B1F4E9EB3007F4993 /* Big Data - Jose Barbudo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Big Data - Jose Barbudo.pdf"; sourceTree = "<group>"; };
+		D582BE3C1F4E9EB3007F4993 /* Change Management - Mr. Ali Abdelgadir.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Change Management - Mr. Ali Abdelgadir.pdf"; sourceTree = "<group>"; };
+		D582BE3D1F4E9EB3007F4993 /* Communication Technology in Nursing - Rawda.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Communication Technology in Nursing - Rawda.pdf"; sourceTree = "<group>"; };
+		D582BE3E1F4E9EB3007F4993 /* Computer and Internet Security - Eyad.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Computer and Internet Security - Eyad.pdf"; sourceTree = "<group>"; };
+		D582BE3F1F4E9EB3007F4993 /* Computerized Physician Order Entry (CPOE) - Khadafy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Computerized Physician Order Entry (CPOE) - Khadafy.pdf"; sourceTree = "<group>"; };
+		D582BE401F4E9EB3007F4993 /* Decision Making - Mr. Ali Abdelgadir.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Decision Making - Mr. Ali Abdelgadir.pdf"; sourceTree = "<group>"; };
+		D582BE411F4E9EB3007F4993 /* Delivering Effective Presentation - Noha.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Delivering Effective Presentation - Noha.pdf"; sourceTree = "<group>"; };
+		D582BE421F4E9EB3007F4993 /* Effective Research on the Internet - Sherman.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Effective Research on the Internet - Sherman.pdf"; sourceTree = "<group>"; };
+		D582BE431F4E9EB3007F4993 /* Research on Human Subjects - Rocky.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Research on Human Subjects - Rocky.pdf"; sourceTree = "<group>"; };
+		D582BE441F4E9EB3007F4993 /* Role of IT in Patient Safety - Fethi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Role of IT in Patient Safety - Fethi.pdf"; sourceTree = "<group>"; };
+		D582BE451F4E9EB3007F4993 /* Team Building - Rafael.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Team Building - Rafael.pdf"; sourceTree = "<group>"; };
+		D582BE511F4E9EBD007F4993 /* 1 NIB Apr 2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "1 NIB Apr 2015.pdf"; sourceTree = "<group>"; };
+		D582BE521F4E9EBD007F4993 /* 2 NIB Sep 2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2 NIB Sep 2015.pdf"; sourceTree = "<group>"; };
+		D582BE531F4E9EBD007F4993 /* 3 NIB Jan 2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3 NIB Jan 2016.pdf"; sourceTree = "<group>"; };
+		D582BE541F4E9EBD007F4993 /* 4 NIB May 2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "4 NIB May 2016.pdf"; sourceTree = "<group>"; };
+		D582BE551F4E9EBD007F4993 /* 5 NIB Oct 2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "5 NIB Oct 2016.pdf"; sourceTree = "<group>"; };
+		D582BE561F4E9EBD007F4993 /* 6 NIB Mar 2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "6 NIB Mar 2017.pdf"; sourceTree = "<group>"; };
+		D582BE571F4E9EBD007F4993 /* 7 NIB Jun 2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "7 NIB Jun 2017.pdf"; sourceTree = "<group>"; };
 		D582BECF1F2CABB10017CC9B /* NurInfoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NurInfoApp.entitlements; sourceTree = "<group>"; };
+		D59820EC1F4E8C0E002B577F /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
+		D59820F21F4E8F88002B577F /* pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pdf.png; sourceTree = "<group>"; };
 		D59960001EAB25C900FF2379 /* FeedsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsTableViewController.swift; sourceTree = "<group>"; };
 		D59960021EAB280600FF2379 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D59960061EAB9B1600FF2379 /* makePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = makePostViewController.swift; path = ../makePostViewController.swift; sourceTree = "<group>"; };
+		D5AC4DCD1F54339600ED0BFD /* 8 NIB Sept 2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "8 NIB Sept 2017.pdf"; sourceTree = "<group>"; };
 		D5AF6F551EA5F8F70054A722 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D5AF6F5F1EA867370054A722 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingTableViewController.swift; path = ../SettingTableViewController.swift; sourceTree = "<group>"; };
 		D5AF6F6D1EA898880054A722 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileTableViewController.swift; path = ../EditProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +222,7 @@
 		D5D4F2FF1EA28E8C003F7BD0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D5D4F3001EA28E8C003F7BD0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D5F5F84D1F30A47E0004D9C9 /* fermerAppli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fermerAppli.png; sourceTree = "<group>"; };
+		EC88EABDFB92AE96BBE8DFD0 /* Pods-NurInfoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NurInfoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NurInfoApp/Pods-NurInfoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,23 +242,165 @@
 				D5D4F2EE1EA28CF9003F7BD0 /* libz.tbd in Frameworks */,
 				D5D4F3021EA28E8C003F7BD0 /* Parse.framework in Frameworks */,
 				D5D4F2EC1EA28CEE003F7BD0 /* libsqlite3.tbd in Frameworks */,
+				74654FE8B963A3000C9B3F60 /* Pods_NurInfoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D57E22C81F349E0D0028004F /* PDF */ = {
+		BB2B4B8B4D0F927F90753291 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D57E22C91F349E260028004F /* Mission.pdf */,
+				1EB40209B6377EE4474F8E23 /* Pods-NurInfoApp.debug.xcconfig */,
+				EC88EABDFB92AE96BBE8DFD0 /* Pods-NurInfoApp.release.xcconfig */,
 			);
-			name = PDF;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5751BA31F4DDF9C0080C6C5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D57E22C41F348DBD0028004F /* LibraryViewController.swift */,
+				D59820EC1F4E8C0E002B577F /* LibraryTableViewCell.swift */,
+				D5751BA41F4DDFF30080C6C5 /* Section.swift */,
+				D5751BA61F4DE1120080C6C5 /* ExpandableHeaderView.swift */,
+				D57E22C81F349E0D0028004F /* PDF files */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		D57E22C81F349E0D0028004F /* PDF files */ = {
+			isa = PBXGroup;
+			children = (
+				D598216C1F4E9D25002B577F /* NI Bulletin */,
+				D59821551F4E9D12002B577F /* NI Presentations */,
+				D59821401F4E9CFE002B577F /* NI Posters */,
+				D598213B1F4E9CEF002B577F /* NI Policies */,
+				D598212A1F4E9CD4002B577F /* NI Brouchers */,
+				D59821231F4E9CC6002B577F /* Downtime */,
+				D598211E1F4E9CB2002B577F /* Clairvia */,
+				D59821051F4E9C95002B577F /* Approved Documents */,
+			);
+			name = "PDF files";
+			sourceTree = "<group>";
+		};
+		D59821051F4E9C95002B577F /* Approved Documents */ = {
+			isa = PBXGroup;
+			children = (
+				D582BDF11F4E9E3C007F4993 /* Moving Forward Plan.pdf */,
+				D582BDF21F4E9E3C007F4993 /* NI Annual Project Plan.pdf */,
+				D582BDF31F4E9E3C007F4993 /* NI Committees of the Facilities Award 2017.pdf */,
+				D582BDF41F4E9E3C007F4993 /* NI Goals.pdf */,
+				D582BDF51F4E9E3C007F4993 /* NI KPI.pdf */,
+				D582BDF61F4E9E3C007F4993 /* NI Mission Vision.pdf */,
+				D582BDF71F4E9E3C007F4993 /* NI Model.pdf */,
+				D582BDF81F4E9E3C007F4993 /* NI Skills Fair v4 - proposal.pdf */,
+				D582BDF91F4E9E3C007F4993 /* NI Strategic Plan 2015-2020.pdf */,
+				D582BDFA1F4E9E3C007F4993 /* NI Values.pdf */,
+				D582BDFB1F4E9E3C007F4993 /* SOP - Handling of HICT Requests.pdf */,
+				D582BDFC1F4E9E3C007F4993 /* SOP - Leave Endorsement.pdf */,
+			);
+			name = "Approved Documents";
+			sourceTree = "<group>";
+		};
+		D598211E1F4E9CB2002B577F /* Clairvia */ = {
+			isa = PBXGroup;
+			children = (
+				D582BE091F4E9E6A007F4993 /* Cerner Clairvia Training Manual Troubleshooting.pdf */,
+				D582BE0A1F4E9E6A007F4993 /* Cerner Clairvia Training Manual v3.pdf */,
+			);
+			name = Clairvia;
+			sourceTree = "<group>";
+		};
+		D59821231F4E9CC6002B577F /* Downtime */ = {
+			isa = PBXGroup;
+			children = (
+				D582BE0D1F4E9E81007F4993 /* 724 DTV  v3.pdf */,
+				D582BE0E1F4E9E81007F4993 /* Contingency Plan for CIS Downtime.pdf */,
+				D582BE0F1F4E9E81007F4993 /* NI Roles and Responsibilities During CIS Downtime.pdf */,
+			);
+			name = Downtime;
+			sourceTree = "<group>";
+		};
+		D598212A1F4E9CD4002B577F /* NI Brouchers */ = {
+			isa = PBXGroup;
+			children = (
+				D582BE131F4E9E91007F4993 /* An Introduction to Cerner Millennium.pdf */,
+				D582BE141F4E9E91007F4993 /* Eye Care Tips for Computer Freaks.pdf */,
+				D582BE151F4E9E91007F4993 /* How to Manage Your Computer Problems.pdf */,
+				D582BE161F4E9E91007F4993 /* Nursing Informatics (new).pdf */,
+				D582BE171F4E9E91007F4993 /* Save Time with Quick Computer Shortcuts.pdf */,
+				D582BE181F4E9E91007F4993 /* Tips on Healthy Computer Use.pdf */,
+				D582BE191F4E9E91007F4993 /* Useful Websites for Nurses.pdf */,
+				D582BE1A1F4E9E91007F4993 /* What is CIS.pdf */,
+			);
+			name = "NI Brouchers";
+			sourceTree = "<group>";
+		};
+		D598213B1F4E9CEF002B577F /* NI Policies */ = {
+			isa = PBXGroup;
+			children = (
+				D582BE231F4E9E9B007F4993 /* OP 4005 NI Skill Lab.pdf */,
+				D582BE241F4E9E9B007F4993 /* OP 4037 CIS Training for New Nurses.pdf */,
+			);
+			name = "NI Policies";
+			sourceTree = "<group>";
+		};
+		D59821401F4E9CFE002B577F /* NI Posters */ = {
+			isa = PBXGroup;
+			children = (
+				D582BE271F4E9EA8007F4993 /* Clinical Information System Elibrary Transforming Education through Technology.pdf */,
+				D582BE281F4E9EA8007F4993 /* Impact of Elearning on Nurses Professional Knowledge and Practice in HMC.pdf */,
+				D582BE291F4E9EA8007F4993 /* Improving PFE Compliance in Outpatient Units og Al Wakra Hospital.pdf */,
+				D582BE2A1F4E9EA8007F4993 /* Innovating the Training Experience Nursing Informatics Department and the Clinical Information Journey.pdf */,
+				D582BE2B1F4E9EA8007F4993 /* NI Approach Towards EHR Training for Safe Patient Documentation.pdf */,
+				D582BE2C1F4E9EA8007F4993 /* NI Collaboration - Improving Medication Safety in Heart Hospital Thru Infusion Management Solution.pdf */,
+				D582BE2D1F4E9EA8007F4993 /* NI Journey Towards Improvement in Patient Safety Thru Infusion Management Technology.pdf */,
+				D582BE2E1F4E9EA8007F4993 /* Oncology Nurses Experience with Cerner Clairvia.pdf */,
+				D582BE2F1F4E9EA8007F4993 /* Oncology Nurses’ Experience with Cerner Clairvia™ A Case Study from Qatar.pdf */,
+				D582BE301F4E9EA8007F4993 /* Re-invigorating Nurses¹ Knowledge and Skills with the Cerner Oncology Solution.pdf */,
+			);
+			name = "NI Posters";
+			sourceTree = "<group>";
+		};
+		D59821551F4E9D12002B577F /* NI Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				D582BE3B1F4E9EB3007F4993 /* Big Data - Jose Barbudo.pdf */,
+				D582BE3C1F4E9EB3007F4993 /* Change Management - Mr. Ali Abdelgadir.pdf */,
+				D582BE3D1F4E9EB3007F4993 /* Communication Technology in Nursing - Rawda.pdf */,
+				D582BE3E1F4E9EB3007F4993 /* Computer and Internet Security - Eyad.pdf */,
+				D582BE3F1F4E9EB3007F4993 /* Computerized Physician Order Entry (CPOE) - Khadafy.pdf */,
+				D582BE401F4E9EB3007F4993 /* Decision Making - Mr. Ali Abdelgadir.pdf */,
+				D582BE411F4E9EB3007F4993 /* Delivering Effective Presentation - Noha.pdf */,
+				D582BE421F4E9EB3007F4993 /* Effective Research on the Internet - Sherman.pdf */,
+				D582BE431F4E9EB3007F4993 /* Research on Human Subjects - Rocky.pdf */,
+				D582BE441F4E9EB3007F4993 /* Role of IT in Patient Safety - Fethi.pdf */,
+				D582BE451F4E9EB3007F4993 /* Team Building - Rafael.pdf */,
+			);
+			name = "NI Presentations";
+			sourceTree = "<group>";
+		};
+		D598216C1F4E9D25002B577F /* NI Bulletin */ = {
+			isa = PBXGroup;
+			children = (
+				D582BE511F4E9EBD007F4993 /* 1 NIB Apr 2015.pdf */,
+				D582BE521F4E9EBD007F4993 /* 2 NIB Sep 2015.pdf */,
+				D582BE531F4E9EBD007F4993 /* 3 NIB Jan 2016.pdf */,
+				D582BE541F4E9EBD007F4993 /* 4 NIB May 2016.pdf */,
+				D582BE551F4E9EBD007F4993 /* 5 NIB Oct 2016.pdf */,
+				D582BE561F4E9EBD007F4993 /* 6 NIB Mar 2017.pdf */,
+				D582BE571F4E9EBD007F4993 /* 7 NIB Jun 2017.pdf */,
+				D5AC4DCD1F54339600ED0BFD /* 8 NIB Sept 2017.pdf */,
+			);
+			name = "NI Bulletin";
 			sourceTree = "<group>";
 		};
 		D5995FF71EAA53BA00FF2379 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D59820F21F4E8F88002B577F /* pdf.png */,
 				D5F5F84D1F30A47E0004D9C9 /* fermerAppli.png */,
 				D567F5C51F2F334400668295 /* bgimage.png */,
 				D567F5C61F2F334400668295 /* Chgepswrd.png */,
@@ -163,6 +427,7 @@
 				D5D4F2D71EA28C76003F7BD0 /* NurInfoApp */,
 				D5D4F2D61EA28C76003F7BD0 /* Products */,
 				D5D4F2EA1EA28CEE003F7BD0 /* Frameworks */,
+				BB2B4B8B4D0F927F90753291 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,23 +443,22 @@
 			isa = PBXGroup;
 			children = (
 				D582BECF1F2CABB10017CC9B /* NurInfoApp.entitlements */,
+				D5751BA31F4DDF9C0080C6C5 /* Library */,
 				D5D4F2D81EA28C76003F7BD0 /* AppDelegate.swift */,
-				D522820A1EAE7F2A009EC260 /* CommentsViewController.swift */,
-				D522820C1EAE7F65009EC260 /* CommentCell.swift */,
 				D59960001EAB25C900FF2379 /* FeedsTableViewController.swift */,
 				D59960021EAB280600FF2379 /* PostTableViewCell.swift */,
 				D5296EAD1F2E41D9003C2F3A /* PostDetailViewController.swift */,
+				D522820A1EAE7F2A009EC260 /* CommentsViewController.swift */,
+				D522820C1EAE7F65009EC260 /* CommentCell.swift */,
 				D59960061EAB9B1600FF2379 /* makePostViewController.swift */,
 				D5AF6F6D1EA898880054A722 /* EditProfileTableViewController.swift */,
 				D5AF6F5F1EA867370054A722 /* SettingTableViewController.swift */,
 				D5AF6F551EA5F8F70054A722 /* SignInViewController.swift */,
-				D57E22C41F348DBD0028004F /* LibraryViewController.swift */,
 				D57E22C61F348E460028004F /* PDFCollectionViewCell.swift */,
 				D5D4F2DC1EA28C76003F7BD0 /* Main.storyboard */,
 				D5D4F2E11EA28C76003F7BD0 /* LaunchScreen.storyboard */,
 				D5D4F2E41EA28C76003F7BD0 /* Info.plist */,
 				D5D4F2DF1EA28C76003F7BD0 /* Assets.xcassets */,
-				D57E22C81F349E0D0028004F /* PDF */,
 				D5995FF71EAA53BA00FF2379 /* images */,
 			);
 			path = NurInfoApp;
@@ -215,6 +479,7 @@
 				D5D4F2EF1EA28D01003F7BD0 /* AudioToolbox.framework */,
 				D5D4F2ED1EA28CF9003F7BD0 /* libz.tbd */,
 				D5D4F2EB1EA28CEE003F7BD0 /* libsqlite3.tbd */,
+				3704F0C9DF518867C2687CC6 /* Pods_NurInfoApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,9 +491,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5D4F2E71EA28C76003F7BD0 /* Build configuration list for PBXNativeTarget "NurInfoApp" */;
 			buildPhases = (
+				63E7E0A9BCE20014B0729E3A /* [CP] Check Pods Manifest.lock */,
 				D5D4F2D11EA28C76003F7BD0 /* Sources */,
 				D5D4F2D21EA28C76003F7BD0 /* Frameworks */,
 				D5D4F2D31EA28C76003F7BD0 /* Resources */,
+				4137491C14BFA6A63F5B3991 /* [CP] Embed Pods Frameworks */,
+				6D5E00EDAE501DBE5A6E1B5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,30 +552,140 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D582BDFE1F4E9E3C007F4993 /* NI Annual Project Plan.pdf in Resources */,
+				D582BE321F4E9EA8007F4993 /* Impact of Elearning on Nurses Professional Knowledge and Practice in HMC.pdf in Resources */,
+				D582BE481F4E9EB3007F4993 /* Communication Technology in Nursing - Rawda.pdf in Resources */,
+				D582BE581F4E9EBD007F4993 /* 1 NIB Apr 2015.pdf in Resources */,
+				D582BE4D1F4E9EB3007F4993 /* Effective Research on the Internet - Sherman.pdf in Resources */,
+				D582BE311F4E9EA8007F4993 /* Clinical Information System Elibrary Transforming Education through Technology.pdf in Resources */,
 				D567F5D91F2F334400668295 /* mobile.png in Resources */,
 				D567F5E11F2F334400668295 /* title.png in Resources */,
+				D582BE221F4E9E91007F4993 /* What is CIS.pdf in Resources */,
 				D567F5D81F2F334400668295 /* like.png in Resources */,
+				D582BE1D1F4E9E91007F4993 /* How to Manage Your Computer Problems.pdf in Resources */,
+				D582BE081F4E9E3C007F4993 /* SOP - Leave Endorsement.pdf in Resources */,
+				D582BE471F4E9EB3007F4993 /* Change Management - Mr. Ali Abdelgadir.pdf in Resources */,
+				D582BE261F4E9E9B007F4993 /* OP 4037 CIS Training for New Nurses.pdf in Resources */,
+				D582BE5C1F4E9EBD007F4993 /* 5 NIB Oct 2016.pdf in Resources */,
+				D582BE461F4E9EB3007F4993 /* Big Data - Jose Barbudo.pdf in Resources */,
+				D582BE0B1F4E9E6A007F4993 /* Cerner Clairvia Training Manual Troubleshooting.pdf in Resources */,
+				D582BE111F4E9E81007F4993 /* Contingency Plan for CIS Downtime.pdf in Resources */,
 				D567F5DD1F2F334400668295 /* photo.png in Resources */,
 				D5D4F2E31EA28C76003F7BD0 /* LaunchScreen.storyboard in Resources */,
+				D582BE4A1F4E9EB3007F4993 /* Computerized Physician Order Entry (CPOE) - Khadafy.pdf in Resources */,
 				D567F5D71F2F334400668295 /* info.png in Resources */,
-				D57E22CA1F349E260028004F /* Mission.pdf in Resources */,
+				D582BE021F4E9E3C007F4993 /* NI Mission Vision.pdf in Resources */,
+				D582BE121F4E9E81007F4993 /* NI Roles and Responsibilities During CIS Downtime.pdf in Resources */,
+				D582BE071F4E9E3C007F4993 /* SOP - Handling of HICT Requests.pdf in Resources */,
+				D582BE501F4E9EB3007F4993 /* Team Building - Rafael.pdf in Resources */,
+				D5AC4DCE1F54339600ED0BFD /* 8 NIB Sept 2017.pdf in Resources */,
+				D582BE0C1F4E9E6A007F4993 /* Cerner Clairvia Training Manual v3.pdf in Resources */,
+				D582BE4B1F4E9EB3007F4993 /* Decision Making - Mr. Ali Abdelgadir.pdf in Resources */,
 				D567F5E01F2F334400668295 /* selectImage.png in Resources */,
+				D582BE1F1F4E9E91007F4993 /* Save Time with Quick Computer Shortcuts.pdf in Resources */,
+				D582BE381F4E9EA8007F4993 /* Oncology Nurses Experience with Cerner Clairvia.pdf in Resources */,
+				D582BE5D1F4E9EBD007F4993 /* 6 NIB Mar 2017.pdf in Resources */,
+				D582BE4F1F4E9EB3007F4993 /* Role of IT in Patient Safety - Fethi.pdf in Resources */,
+				D582BE5B1F4E9EBD007F4993 /* 4 NIB May 2016.pdf in Resources */,
+				D582BE491F4E9EB3007F4993 /* Computer and Internet Security - Eyad.pdf in Resources */,
+				D582BE5A1F4E9EBD007F4993 /* 3 NIB Jan 2016.pdf in Resources */,
 				D5D4F2E01EA28C76003F7BD0 /* Assets.xcassets in Resources */,
+				D582BE4C1F4E9EB3007F4993 /* Delivering Effective Presentation - Noha.pdf in Resources */,
 				D567F5DE1F2F334400668295 /* profilepic.jpg in Resources */,
 				D567F5D61F2F334400668295 /* email.png in Resources */,
+				D582BDFF1F4E9E3C007F4993 /* NI Committees of the Facilities Award 2017.pdf in Resources */,
 				D567F5DA1F2F334400668295 /* name.png in Resources */,
+				D582BE391F4E9EA8007F4993 /* Oncology Nurses’ Experience with Cerner Clairvia™ A Case Study from Qatar.pdf in Resources */,
+				D582BE361F4E9EA8007F4993 /* NI Collaboration - Improving Medication Safety in Heart Hospital Thru Infusion Management Solution.pdf in Resources */,
+				D582BE031F4E9E3C007F4993 /* NI Model.pdf in Resources */,
 				D567F5D41F2F334400668295 /* bgimage.png in Resources */,
+				D582BE331F4E9EA8007F4993 /* Improving PFE Compliance in Outpatient Units og Al Wakra Hospital.pdf in Resources */,
+				D582BE3A1F4E9EA8007F4993 /* Re-invigorating Nurses¹ Knowledge and Skills with the Cerner Oncology Solution.pdf in Resources */,
+				D582BE061F4E9E3C007F4993 /* NI Values.pdf in Resources */,
+				D582BE1B1F4E9E91007F4993 /* An Introduction to Cerner Millennium.pdf in Resources */,
+				D582BE051F4E9E3C007F4993 /* NI Strategic Plan 2015-2020.pdf in Resources */,
 				D5D4F2DE1EA28C76003F7BD0 /* Main.storyboard in Resources */,
+				D582BE371F4E9EA8007F4993 /* NI Journey Towards Improvement in Patient Safety Thru Infusion Management Technology.pdf in Resources */,
+				D582BDFD1F4E9E3C007F4993 /* Moving Forward Plan.pdf in Resources */,
+				D582BE4E1F4E9EB3007F4993 /* Research on Human Subjects - Rocky.pdf in Resources */,
+				D582BE001F4E9E3C007F4993 /* NI Goals.pdf in Resources */,
+				D582BE041F4E9E3C007F4993 /* NI Skills Fair v4 - proposal.pdf in Resources */,
+				D582BE1C1F4E9E91007F4993 /* Eye Care Tips for Computer Freaks.pdf in Resources */,
 				D567F5DB1F2F334400668295 /* NID.png in Resources */,
+				D582BE591F4E9EBD007F4993 /* 2 NIB Sep 2015.pdf in Resources */,
+				D582BE201F4E9E91007F4993 /* Tips on Healthy Computer Use.pdf in Resources */,
+				D582BE5E1F4E9EBD007F4993 /* 7 NIB Jun 2017.pdf in Resources */,
+				D59820F31F4E8F88002B577F /* pdf.png in Resources */,
 				D567F5DC1F2F334400668295 /* notifications.png in Resources */,
 				D567F5E21F2F334400668295 /* unlike.png in Resources */,
+				D582BE101F4E9E81007F4993 /* 724 DTV  v3.pdf in Resources */,
 				D567F5DF1F2F334400668295 /* savedPosts.png in Resources */,
+				D582BE351F4E9EA8007F4993 /* NI Approach Towards EHR Training for Safe Patient Documentation.pdf in Resources */,
+				D582BE211F4E9E91007F4993 /* Useful Websites for Nurses.pdf in Resources */,
 				D567F5D51F2F334400668295 /* Chgepswrd.png in Resources */,
 				D5F5F84E1F30A47E0004D9C9 /* fermerAppli.png in Resources */,
+				D582BE011F4E9E3C007F4993 /* NI KPI.pdf in Resources */,
+				D582BE1E1F4E9E91007F4993 /* Nursing Informatics (new).pdf in Resources */,
+				D582BE341F4E9EA8007F4993 /* Innovating the Training Experience Nursing Informatics Department and the Clinical Information Journey.pdf in Resources */,
+				D582BE251F4E9E9B007F4993 /* OP 4005 NI Skill Lab.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4137491C14BFA6A63F5B3991 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NurInfoApp/Pods-NurInfoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PDFReader/PDFReader.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFReader.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NurInfoApp/Pods-NurInfoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63E7E0A9BCE20014B0729E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NurInfoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D5E00EDAE501DBE5A6E1B5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NurInfoApp/Pods-NurInfoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5D4F2D11EA28C76003F7BD0 /* Sources */ = {
@@ -315,12 +693,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5AF6F601EA867370054A722 /* SettingTableViewController.swift in Sources */,
+				D5751BA71F4DE1120080C6C5 /* ExpandableHeaderView.swift in Sources */,
+				D59820ED1F4E8C0E002B577F /* LibraryTableViewCell.swift in Sources */,
 				D57E22C51F348DBD0028004F /* LibraryViewController.swift in Sources */,
 				D59960011EAB25C900FF2379 /* FeedsTableViewController.swift in Sources */,
 				D5AF6F6E1EA898880054A722 /* EditProfileTableViewController.swift in Sources */,
 				D5AF6F561EA5F8F70054A722 /* SignInViewController.swift in Sources */,
 				D522820B1EAE7F2A009EC260 /* CommentsViewController.swift in Sources */,
 				D522820D1EAE7F65009EC260 /* CommentCell.swift in Sources */,
+				D5751BA51F4DDFF30080C6C5 /* Section.swift in Sources */,
 				D57E22C71F348E460028004F /* PDFCollectionViewCell.swift in Sources */,
 				D5D4F2D91EA28C76003F7BD0 /* AppDelegate.swift in Sources */,
 				D5296EAE1F2E41D9003C2F3A /* PostDetailViewController.swift in Sources */,
@@ -448,6 +829,7 @@
 		};
 		D5D4F2E81EA28C76003F7BD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB40209B6377EE4474F8E23 /* Pods-NurInfoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NurInfoApp/NurInfoApp.entitlements;
@@ -468,6 +850,7 @@
 		};
 		D5D4F2E91EA28C76003F7BD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC88EABDFB92AE96BBE8DFD0 /* Pods-NurInfoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NurInfoApp/NurInfoApp.entitlements;
