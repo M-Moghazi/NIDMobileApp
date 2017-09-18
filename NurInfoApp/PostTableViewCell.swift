@@ -26,6 +26,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var editBtnLbl: UIButton!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var footerView: UIView!
+    @IBOutlet weak var category: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
